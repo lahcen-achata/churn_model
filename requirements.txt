@@ -5,6 +5,8 @@
 numpy
 joblib
 flask
+mlflow
+sklearn
 click
 Sphinx
 coverage
