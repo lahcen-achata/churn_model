@@ -3,6 +3,7 @@
 
 # external requirements
 numpy
+joblib
 flask
 click
 Sphinx
