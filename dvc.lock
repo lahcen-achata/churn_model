@@ -43,8 +43,8 @@ stages:
       size: 3778
     params:
       params.yaml:
-        random_forest.max_depth: 9
-        random_forest.n_estimators: 25
+        random_forest.max_depth: 7
+        random_forest.n_estimators: 24
   log_production_model:
     cmd: python src/models/production_model_selection.py --config=params.yaml
     deps:
@@ -53,9 +53,9 @@ stages:
       size: 1680
     params:
       params.yaml:
-        random_forest.max_depth: 9
-        random_forest.n_estimators: 25
+        random_forest.max_depth: 7
+        random_forest.n_estimators: 24
     outs:
     - path: models/model.joblib
-      md5: 20934ba7bc5750ce4a73be828658b2b5
-      size: 312379
+      md5: 8fd369cb383890442db7ac85f4ea200e
+      size: 224807
